@@ -17,15 +17,17 @@ public class lOginCRendesntiL {
 		Thread.sleep(5000);
 	
 		driver.navigate().refresh();
-		
+		driver.findElement(By.xpath("//*[@id=\"txtUsername\"]")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@name='txtPassword']")).sendKeys("admin123");
-		driver.findElement(By.xpath("//*[@id=\"btnLogin\"]")).click();
+		//driver.findElement(By.xpath("//*[@id=\"btnLogin\"]")).click();
 		
-		
-		 String actual=driver.findElement(By.xpath("//*[@id=\"spanMessage\"]")).getText();
-		 String expected ="is op";
-		 System.out.println(actual.equals(expected));
-		
+//		FOrgot Password click direct
+//		driver.findElement(By.linkText("Forgot your password?")).click();
+//		driver.findElement(By.partialLinkText("Forgot  password?")).click();
+		//name change
+		driver.findElement(By.xpath("//*[@id=\"txtUsername\"]")).clear();
+		driver.findElement(By.xpath("//*[@id=\"txtUsername\"]")).sendKeys("akshay");
+
 		
 	}
 
