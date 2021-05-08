@@ -1,4 +1,4 @@
-package findElementsdaty5;
+package dropdownDay;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class RandomlyCLickOneAfterOther {
+public class dropDownALLPrint2 {
 
-	public static void main(String[] args) throws Throwable {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\akshay\\Downloads\\selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -21,29 +21,19 @@ public class RandomlyCLickOneAfterOther {
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin123");
 		driver.findElement(By.xpath("//input[@name='Submit' or @id='btn']")).click();
 
-		driver.findElement(By.xpath("//b[text()='Admin']")).click();
-
-		List<WebElement> checkbox = driver.findElements(By.xpath("//input[contains(@id,'ohrmList_chkSelectRecord_')]"));
-		int u = checkbox.size();
-		System.out.println("number of checkboxes"+u);
-		int i=0;
-	for (WebElement chekes : checkbox) {
+		driver.findElement(By.xpath("//*[text()='PIM']")).click();
 		
-		if(i%2==0) {
-			chekes.click();
-	
-}
-		i++;
+		  List<WebElement> subdivision = driver.findElements(By.xpath("//*[@id='empsearch_job_title']//option"));
+		  for(WebElement toPrintAllDropdown  : subdivision) {
+
+			  String ss = toPrintAllDropdown.getText();
+			  System.out.println(ss);
+			  if(ss.equals("Chief Technical Officer")) 
+				  toPrintAllDropdown.click();
+		
+			  }
+		  }
+		  
 	}
 
-				
-					
-	} 
-
-}
-
-			
-
-		
-	
 
