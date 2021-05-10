@@ -21,22 +21,21 @@ public class windowHandling {
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin123");
 		driver.findElement(By.xpath("//input[@name='Submit' or @id='btn']")).click();
 
-		
 		driver.findElement(By.linkText("OrangeHRM, Inc")).click();
-		String parentId = driver.getWindowHandle();
+		String parentId = driver.getWindowHandle();//gives parentID
 		System.out.println(parentId);
-		
+
 		Set<String> parentChild = driver.getWindowHandles();
 		System.out.println(parentChild);
-	for(  String   bothprint :   parentChild   ) {
-	if(!(parentId.equals(bothprint))) {
-		driver.switchTo().window(bothprint);
-	driver.navigate().to(" https://www.google.com");
-	}
-	//driver.switchTo().window(parentId);
-	//driver.switchTo().defaultContent();
-	}
+		for (String bothprint : parentChild) {
+			System.out.println(bothprint);
+			if (!(parentId.equals(bothprint))) {
+				driver.switchTo().window(bothprint);//for child
+				driver.navigate().to(" https://www.google.com");
+			}
+			 driver.switchTo().window(parentId);//for parent
+			// driver.switchTo().defaultContent();
+		}
 	}
 
 }
-
