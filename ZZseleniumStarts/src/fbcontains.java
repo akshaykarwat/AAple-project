@@ -31,7 +31,7 @@ public class fbcontains {
 		
 		//by contaiins
 		
-		//driver.findElement(By.xpath("(//button[contains(@class,'_2KpZ6l _2HKlqd ')])[1]")).click();
+		driver.findElement(By.xpath("(//button[contains(@class,'_2KpZ6l _2HKlqd ')])[1]")).click();
 	}
 
 }

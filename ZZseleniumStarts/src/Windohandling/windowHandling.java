@@ -34,6 +34,7 @@ public class windowHandling {
 				driver.navigate().to(" https://www.google.com");
 			}
 			 driver.switchTo().window(parentId);//for parent
+			
 			// driver.switchTo().defaultContent();
 		}
 	}
