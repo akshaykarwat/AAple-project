@@ -17,18 +17,18 @@ public class assighnmentHower {
 		driver.manage().window().maximize();
 		driver.navigate().refresh();
 		Actions act=new Actions(driver);
-		
+		//tab+sendkey+enter+buid+perform
 		WebElement username=driver.findElement(By. xpath("//*[@name='txtUsername']"));
 		username.sendKeys("Admin");
 		act.sendKeys(username, Keys.TAB).sendKeys("admin123").sendKeys(username, Keys.ENTER).build().perform();
-		
+		//hower
 		WebElement hOwer=driver.findElement(By.linkText("Admin"));
 		act.moveToElement(hOwer).perform();
-		
+		//hower
 		WebElement user=driver.findElement(By.xpath("//*[@id='menu_admin_UserManagement']"));
 		act.moveToElement(user).perform();
 		
-		
+		//hower
 		WebElement userlast=driver.findElement(By.xpath("//*[@id='menu_admin_viewSystemUsers']"));
 		act.moveToElement(userlast).click(userlast).perform();
 		
