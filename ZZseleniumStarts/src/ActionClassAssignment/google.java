@@ -20,7 +20,7 @@ public class google {
 	Actions act=new Actions(driver);
 		
 		WebElement printGoogle=driver.findElement(By.xpath("//input[@class='gLFyf gsfi']"));
-		act.sendKeys("god pics").sendKeys(printGoogle, Keys.DOWN).sendKeys(printGoogle, Keys.DOWN).sendKeys(printGoogle, Keys.DOWN).click(printGoogle).build().perform();
+		act.sendKeys("chris gayle").sendKeys(printGoogle, Keys.DOWN).sendKeys(printGoogle, Keys.DOWN).sendKeys(printGoogle, Keys.DOWN).click(printGoogle).build().perform();
 		 
 		WebElement enter=driver.findElement(By.xpath("(//*[@class='gNO89b'])[2]"));
 		act.click(enter).perform();

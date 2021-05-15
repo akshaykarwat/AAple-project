@@ -13,49 +13,31 @@ public class LoginToHrm {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.setProperty("webdriver.chrome.driver", "C:\\Users\\akshay\\Downloads\\selenium\\chromedriver.exe" );
-WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\akshay\\Downloads\\selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 
-driver.get("https://opensource-demo.orangehrmlive.com/");
-driver.manage().window().maximize();
-Actions act=new Actions(driver);
-       WebElement ID = driver.findElement(By.xpath("//*[@id='txtUsername']"));
-       ID.sendKeys("Admin");
-       act.sendKeys(ID, Keys.TAB).perform();
-       
-      WebElement Password =driver.findElement(By.xpath("//*[@id='txtPassword']"));
-      Password.sendKeys("admin123");
-       act.sendKeys(Password, Keys.ENTER).perform();
-       
-          WebElement clickAdmin = driver.findElement(By.linkText("Admin"));
-          act.moveToElement(clickAdmin).perform();
-          act.click(clickAdmin).perform();
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.manage().window().maximize();
+		Actions act = new Actions(driver);
+		WebElement ID = driver.findElement(By.xpath("//*[@id='txtUsername']"));
+		ID.sendKeys("Admin");
+		act.sendKeys(ID, Keys.TAB).perform();
 
-		WebElement checkbox = driver.findElement(By.xpath("//*[@id=\"ohrmList_chkSelectRecord_10\"]"));
-		act.click(checkbox).perform();
+		WebElement Password = driver.findElement(By.xpath("//*[@id='txtPassword']"));
+		Password.sendKeys("admin123");
+		act.sendKeys(Password, Keys.ENTER).perform();
 
-		WebElement perfomance = driver.findElement(By.xpath("//*[@id=\"menu_pim_viewMyDetails\"]/b"));
-		act.contextClick().perform();
+		WebElement clickAdmin = driver.findElement(By.linkText("Admin"));
+		act.moveToElement(clickAdmin).perform();
+		act.click(clickAdmin).perform();
 
-		WebElement requirment = driver.findElement(By.linkText("Recruitment"));
-		act.moveToElement(requirment).perform();
+		WebElement PIm = driver.findElement(By.xpath("//*[@id=\"menu_pim_viewPimModule\"]/b"));
+		PIm.click();
 
-		WebElement myinfo = driver.findElement(By.xpath("//*[@id=\"menu_pim_viewMyDetails\"]/b"));
-		act.click(myinfo).perform();
-		
-
-		WebElement blood = driver.findElement(By.xpath("//*[@id=\"btnEditCustom\"]"));
-		act.click(blood).perform();
-       
-		 List<WebElement> select = driver.findElements(By.xpath("//*[@name='custom1']//option"));
-		 for( WebElement one  :select   ) {
-			String xx =one.getText();
-			System.out.println(xx);
-			if(xx.equals("A+")){
-					one.click();
-		 }
-		
-    	}
-
-}
+		WebElement checkbox = driver.findElement(By.xpath("//*[@id=\"ohrmList_chkSelectRecord_2\"]"));
+        act.click(checkbox).contextClick(checkbox).build().perform();
+        
+        
+        
+	}
 }

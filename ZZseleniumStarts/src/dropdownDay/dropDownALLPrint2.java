@@ -28,7 +28,7 @@ public class dropDownALLPrint2 {
 
 			  String ss = toPrintAllDropdown.getText();
 			  System.out.println(ss);
-			  if(ss.equals("Chief Technical Officer")) 
+			  if(ss.equals("Automation Tester")) { 
 				  toPrintAllDropdown.click();
 		
 			  }
@@ -37,3 +37,4 @@ public class dropDownALLPrint2 {
 }
 
 
+}
