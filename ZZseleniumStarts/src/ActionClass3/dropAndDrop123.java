@@ -27,7 +27,7 @@ public class dropAndDrop123 {
 //		Thread.sleep(2000);
 //		act.dragAndDrop(drag, drop).clickAndHold(drag).build().perform();
 		
-		act.clickAndHold(drag).moveByOffset(125, 0).build().perform();
+		act.clickAndHold(drag).moveByOffset(120, 0).build().perform();
 
 		   
 		
