@@ -29,7 +29,7 @@ public class RandomlyCLickOneAfterOther {
 		int i=0;
 	for (WebElement chekes : checkbox) {
 		
-		if(i%2==0) {
+		if(i%5==0) {
 			chekes.click();
 	
 }
