@@ -22,10 +22,12 @@ public class dropAndDrop123 {
 		   
 		   Thread.sleep(2000);
 		Actions act= new Actions(driver)  ;
-		act.dragAndDrop(drag, drop).perform();
+		//act.dragAndDrop(drag, drop).perform();
 //		act.click(drag);
 //		Thread.sleep(2000);
 //		act.dragAndDrop(drag, drop).clickAndHold(drag).build().perform();
+		
+		act.clickAndHold(drag).moveByOffset(125, 0).build().perform();
 
 		   
 		
