@@ -23,13 +23,14 @@ public class dropDownALLPrint2 {
 
 		driver.findElement(By.xpath("//*[text()='PIM']")).click();
 		
-		  List<WebElement> subdivision = driver.findElements(By.xpath("//*[@id='empsearch_job_title']//option"));
-		  for(WebElement toPrintAllDropdown  : subdivision) {
+		  List<WebElement> options = driver.findElements(By.xpath("//*[@id='empsearch_job_title']//option"));
+	
+		for(WebElement opt  : options) {
 
-			  String ss = toPrintAllDropdown.getText();
+			  String ss = opt.getText();
 			  System.out.println(ss);
-			  if(ss.equals("Automation Tester")) { 
-				  toPrintAllDropdown.click();
+			  if(ss.equals("Chief Executive Officer")) { 
+			opt.click();
 		
 			  }
 		  }

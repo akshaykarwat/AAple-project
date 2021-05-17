@@ -24,12 +24,13 @@ public class PrintAllDRopDown {
 		driver.findElement(By.linkText("PIM")).click();
 		
 		
-		List<WebElement> store = driver.findElements(By.xpath("(//*[@id='empsearch_job_title'])//option"));
-		for(  WebElement one :store) {
-			String xx = one.getText();
+		List<WebElement> options = driver.findElements(By.xpath("(//*[@id='empsearch_job_title'])//option"));
+		for(  WebElement opt :options) {
+			String xx = opt.getText();
 			System.out.println(xx);
-			if(xx.equals("Automation Tester"))
-			one.click();
+			if(xx.equals("Financial Analyst")) {
+			opt.click();
+			}
 		}
 	}
 	
