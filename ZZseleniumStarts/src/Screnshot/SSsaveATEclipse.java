@@ -11,7 +11,7 @@ import org.openqa.selenium.io.FileHandler;
 
 import scrrenshot2.ssCpature;
 
-public class directBYcallingmEthod {
+public class SSsaveATEclipse {
 
 	public static void main(String[] args) throws Throwable {
 		// TODO Auto-generated method stub
@@ -21,7 +21,10 @@ public class directBYcallingmEthod {
 		driver.manage().window().fullscreen();
 		
 		
-		ssCpature.capturing(driver, "ok");
+		//ssCpature.capturing(driver, "ok");
+		ssCpature.capturinginside(driver, "ok1");
+		
+		
 		
 		
 

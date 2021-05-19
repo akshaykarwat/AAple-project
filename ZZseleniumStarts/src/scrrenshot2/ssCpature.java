@@ -23,6 +23,16 @@ public class ssCpature {
 	
   
 	}
+	public static void capturinginside( WebDriver driver, String filename ) throws Throwable {
+		 TakesScreenshot src = (TakesScreenshot)driver;
+	     File source = src.getScreenshotAs(OutputType.FILE);
+	     
+	     File destination = new File ("C:\\Users\\akshay\\git\\akshay\\ZZseleniumStarts\\SsScreenshot\\"+filename+".png");
+	     
+ FileHandler.copy(source, destination);
+
+
+	}
   
   
   

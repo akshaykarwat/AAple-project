@@ -1,6 +1,7 @@
 package ActionClass3;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,9 +28,15 @@ public class dropAndDrop123 {
 //		Thread.sleep(2000);
 //		act.dragAndDrop(drag, drop).clickAndHold(drag).build().perform();
 		
-		act.clickAndHold(drag).moveByOffset(120, 0).build().perform();
+		act.clickAndHold(drag).moveByOffset(120, 0).release().build().perform();
 
-		   
+		WebElement one = driver.findElement(By.xpath("//*[@id='sharing-button-Blog1-byline-2873846720740225467']"));
+		           JavascriptExecutor js = (JavascriptExecutor)driver;
+		          // js.executeScript("window.scrollBy(0,200)");
+		           js.executeScript("arguments[0].scrollIntoView();", one);
+		           Thread.sleep(2000);
+		           
+		        one.click();   
 		
 		
 		
