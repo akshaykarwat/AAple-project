@@ -23,7 +23,11 @@ public class ExcelWriteAdata {
 		FileOutputStream fo=new FileOutputStream(fout);
 		
 		sh1.getRow(0).getCell(0).setCellValue("AKSHAY");
+		//to write in a row
 		sh1.createRow(12).createCell(0).setCellValue("i am here");
+		//to write on colunmn
+		sh1.createRow(10).createCell(0).setCellValue("i am here");
+		sh1.getRow(10).createCell(1).setCellValue("boss");
 		wb.write(fo);
 		
 		

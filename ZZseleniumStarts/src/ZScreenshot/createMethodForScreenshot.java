@@ -19,7 +19,7 @@ public class createMethodForScreenshot {
 
 	File source = screenshot.getScreenshotAs(OutputType.FILE);
 	
-	File destination=new File("C:\\Users\\akshay\\Desktop\\akshay\\"+filename+"jpg");
+	File destination=new File("C:\\Users\\akshay\\Desktop\\akshay\\"+filename+".png");
 	
 	
 	FileHandler.copy(source, destination);
@@ -32,7 +32,7 @@ public class createMethodForScreenshot {
 		          
 		         File source = scrc.getScreenshotAs(OutputType.FILE);
 		         
-		         File destination =new File("C:\\Users\\akshay\\git\\akshay\\ZZseleniumStarts\\SsScreenshot\\"+filename+".jpeg");
+		         File destination =new File("C:\\Users\\akshay\\git\\akshay\\ZZseleniumStarts\\SsScreenshot\\"+filename+".png");
 		          
 		         
 		         FileHandler.copy(source, destination);

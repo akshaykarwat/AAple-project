@@ -17,7 +17,7 @@ public class ScreenShotBymethodCalling {
 		
 		
 		
-		createMethodForScreenshot.capture(driver, "balu234");
+		createMethodForScreenshot.capture(driver, "balu2345");
 	}
 
 }
