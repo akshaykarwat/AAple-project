@@ -13,7 +13,7 @@ public class doubleCLIk {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "F:\\Selenium\\Driver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://chercher.tech/practice/practice-pop-ups-selenium-webdriver");
+		driver.get("https://chercher.tech/zzzzzpractice/zzzzzpractice-pop-ups-selenium-webdriver");
 		driver.manage().window().maximize();
 		
 		
