@@ -16,12 +16,14 @@ public class writeAtouter {
   File F=new File(path);
   FileInputStream fis=new FileInputStream(F);
   XSSFWorkbook wb= new XSSFWorkbook(fis) ;
-  XSSFSheet sh1=wb.getSheetAt(0);
+  XSSFSheet sh1=wb.getSheet("Sheet2");
   
   File fout=new File(path);
  FileOutputStream foi=new FileOutputStream(fout);
  sh1.createRow(12).createCell(0).setCellValue("oks");
-  sh1.getRow(12).createCell(1).setCellValue("oks1");
+ 
+ sh1.getRow(12).createCell(1).setCellValue("oks1");
+  
   wb.write(foi);
 		
 		
