@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Testng.oneTest"/>
-       <class name="Testng.Twotest"/>
+      <class name="Testng4.class2"/>
+       <class name="Testng4.class1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

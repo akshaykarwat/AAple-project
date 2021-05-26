@@ -1,135 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[i am always top]]>
+      <![CDATA[rajesh]]>
     </line>
     <line>
-      <![CDATA[i am awlys brfore method]]>
-    </line>
-    <line>
-      <![CDATA[this will run frist ]]>
-    </line>
-    <line>
-      <![CDATA[after method]]>
-    </line>
-    <line>
-      <![CDATA[i am awlys brfore method]]>
-    </line>
-    <line>
-      <![CDATA[this will run 2nd ]]>
-    </line>
-    <line>
-      <![CDATA[after method]]>
-    </line>
-    <line>
-      <![CDATA[i am awlys brfore method]]>
-    </line>
-    <line>
-      <![CDATA[it will run 3rd ]]>
-    </line>
-    <line>
-      <![CDATA[after method]]>
-    </line>
-    <line>
-      <![CDATA[it will runn afterclass]]>
-    </line>
-    <line>
-      <![CDATA[it will run 8th ]]>
+      <![CDATA[akshay]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="261" started-at="2021-05-24T07:08:08Z" finished-at="2021-05-24T07:08:09Z">
+  <suite name="Suite" duration-ms="280" started-at="2021-05-26T06:10:21Z" finished-at="2021-05-26T06:10:21Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="261" started-at="2021-05-24T07:08:08Z" finished-at="2021-05-24T07:08:09Z">
-      <class name="Testng.oneTest">
-        <test-method status="PASS" signature="else1()[pri:0, instance:Testng.oneTest@14acaea5]" name="else1" is-config="true" duration-ms="29" started-at="2021-05-24T12:38:08Z" finished-at="2021-05-24T12:38:09Z">
+    <test name="Test" duration-ms="280" started-at="2021-05-26T06:10:21Z" finished-at="2021-05-26T06:10:21Z">
+      <class name="Testng4.class1">
+        <test-method status="PASS" signature="m1()[pri:-2, instance:Testng4.class1@18be83e4]" name="m1" duration-ms="17" started-at="2021-05-26T11:40:21Z" finished-at="2021-05-26T11:40:21Z">
           <reporter-output>
             <line>
-              <![CDATA[i am always top]]>
+              <![CDATA[akshay]]>
             </line>
           </reporter-output>
-        </test-method> <!-- else1 -->
-        <test-method status="PASS" signature="else6()[pri:0, instance:Testng.oneTest@14acaea5]" name="else6" is-config="true" duration-ms="13" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
+        </test-method> <!-- m1 -->
+      </class> <!-- Testng4.class1 -->
+      <class name="Testng4.class2">
+        <test-method status="PASS" signature="m2()[pri:-3, instance:Testng4.class2@cc285f4]" name="m2" duration-ms="96" started-at="2021-05-26T11:40:21Z" finished-at="2021-05-26T11:40:21Z">
           <reporter-output>
             <line>
-              <![CDATA[i am awlys brfore method]]>
+              <![CDATA[rajesh]]>
             </line>
           </reporter-output>
-        </test-method> <!-- else6 -->
-        <test-method status="PASS" signature="else4()[pri:-2, instance:Testng.oneTest@14acaea5]" name="else4" duration-ms="28" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[this will run frist ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else4 -->
-        <test-method status="PASS" signature="else5()[pri:0, instance:Testng.oneTest@14acaea5]" name="else5" is-config="true" duration-ms="3" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[after method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else5 -->
-        <test-method status="PASS" signature="else6()[pri:0, instance:Testng.oneTest@14acaea5]" name="else6" is-config="true" duration-ms="2" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[i am awlys brfore method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else6 -->
-        <test-method status="PASS" signature="else3()[pri:-1, instance:Testng.oneTest@14acaea5]" name="else3" duration-ms="6" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[this will run 2nd ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else3 -->
-        <test-method status="PASS" signature="else5()[pri:0, instance:Testng.oneTest@14acaea5]" name="else5" is-config="true" duration-ms="1" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[after method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else5 -->
-        <test-method status="PASS" signature="else6()[pri:0, instance:Testng.oneTest@14acaea5]" name="else6" is-config="true" duration-ms="1" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[i am awlys brfore method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else6 -->
-        <test-method status="PASS" signature="else2()[pri:0, instance:Testng.oneTest@14acaea5]" name="else2" duration-ms="7" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[it will run 3rd ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else2 -->
-        <test-method status="PASS" signature="else5()[pri:0, instance:Testng.oneTest@14acaea5]" name="else5" is-config="true" duration-ms="2" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[after method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else5 -->
-        <test-method status="PASS" signature="else7()[pri:0, instance:Testng.oneTest@14acaea5]" name="else7" is-config="true" duration-ms="1" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[it will runn afterclass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else7 -->
-      </class> <!-- Testng.oneTest -->
-      <class name="Testng.Twotest">
-        <test-method status="PASS" signature="else2()[pri:0, instance:Testng.Twotest@46d56d67]" name="else2" duration-ms="3" started-at="2021-05-24T12:38:09Z" finished-at="2021-05-24T12:38:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[it will run 8th ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- else2 -->
-      </class> <!-- Testng.Twotest -->
+        </test-method> <!-- m2 -->
+      </class> <!-- Testng4.class2 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
