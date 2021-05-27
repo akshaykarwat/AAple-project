@@ -22,7 +22,7 @@ Password.sendKeys("admin123");
 WebElement submit =driver.findElement(By.name("Submit"));
 Thread.sleep(10000);
 submit.click();
-driver.close();
+
 
 
 

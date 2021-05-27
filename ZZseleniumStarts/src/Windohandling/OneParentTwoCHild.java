@@ -3,7 +3,9 @@ package Windohandling;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class OneParentTwoCHild {
@@ -38,7 +40,11 @@ public class OneParentTwoCHild {
 	}
 	//O ZERO MEANS PAREnt calling
 driver.switchTo().window(ss[2]);
-driver.findElement(By.xpath("/html/body/div[4]/div/div/div/div/div/a/button")).click();
+  WebElement one = driver.findElement(By.xpath("/html/body/div[4]/div/div/div/div/div/a/button"));
+ one.click();
+
+  
+  
 	
 		
 		
